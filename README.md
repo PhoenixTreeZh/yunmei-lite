@@ -54,8 +54,6 @@ powershell -File .\protocol-tests\run-password-state.ps1
 
 输出 `app/build/outputs/apk/debug/app-debug.apk` 使用调试签名，供本地测试。发布密钥和更新渠道未配置。`reference-upstream/` 仅为工作区历史参考，不参与构建或精简源码包。
 
-验证记录见 [验证记录](docs/验证记录.md)。早期协议研究和历史返回分类见 [关键实现步骤](docs/关键实现步骤.md)；当前版本的完成提示以“本版成功提示的定义”为准。
-
 ## 来源与许可
 
 除上述项目交流与贡献外，早期接口与兼容性研究也参考了 [云莓不智能（yunmei_unintelligent）](https://github.com/zxy19/yunmei_unintelligent)；历史参考说明保留在 [README.upstream.md](README.upstream.md)。
