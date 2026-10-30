@@ -1,0 +1,298 @@
+{
+  "name": "云莓Lite",
+  "author": "PhoenixTree",
+  "version": "0.3.3-dev",
+  "package": "com.yunmei.rewrite",
+  "upstream_reference": "JustJoy122/yunmei_vibe ci-20261028-57; zxy19/yunmei_unintelligent",
+  "scope": [
+    "manual_unlock",
+    "opt_in_auto_unlock",
+    "cloud_password",
+    "location_sign",
+    "account_management"
+  ],
+  "active_source_set": "app/src/four",
+  "device_io_mode": "manual_or_opt_in_foreground_open",
+  "unlock_success_policy": "complete_ble_write",
+  "app_diagnostic_logging": false,
+  "support_entry": "local_user_provided_payment_image",
+  "launcher_alpha": "opaque_rgb",
+  "feedback_email": "phoenixtree_zh@163.com",
+  "android_build_verified": true,
+  "lint_errors": 0,
+  "lint_warnings": 9,
+  "protocol_test_assertions_passed": 3489,
+  "aes_assertions_passed": 54,
+  "capability_assertions_passed": 78,
+  "password_lifecycle_assertions_passed": 46,
+  "auto_unlock_gate_assertions_passed": 24,
+  "write_completion_assertions_passed": 23,
+  "historical_response_tests_define_current_success": false,
+  "ui_library": {
+    "artifact": "top.yukonga.miuix.kmp:miuix-android",
+    "version": "0.5.1"
+  },
+  "ui_settings_defaults": {
+    "hide_sign": true,
+    "hide_password": false,
+    "quick_connect": true,
+    "auto_password": false,
+    "auto_unlock": false,
+    "theme_mode": 0
+  },
+  "user_report": {
+    "login_and_lock_list": "succeeded",
+    "lock_type_id": 13,
+    "catalog_aes_field_011": "explicit_null",
+    "resolution_012": "OFFICIAL_NULL_AS_PLAIN"
+  },
+  "user_reported_physical_open_012": true,
+  "new_033_ui_phone_verified": false,
+  "agent_live_account_or_ble_io": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "2c9c766b0be9818a434e633bc2490cc7994477c1d38c6ebae17dc8b7263e769a"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "sha256": "55ba9c2fcc06b988090385ae898550243afe7afcfb5ae8bba65475b8062f3fa2"
+    },
+    {
+      "path": "app/src/four/AndroidManifest.xml",
+      "sha256": "c9346e26afaec0e17b3a9e451f77d562bcfd53af3b49638f9a5bd7711150b3f6"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/AutoUnlockGate.java",
+      "sha256": "6b2d0e6be9671cf6cd8fa2bb85061a118c9425330d308d5315d162c758ef5467"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/ble/BleUnlockController.java",
+      "sha256": "97d94939a0b016a1553881d19f4701f19155ecd6294ea3df25f546694cef6551"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/ble/OfficialAesEnvelope.java",
+      "sha256": "1302b96c6d54dbe16366b38c761c55050942bde0e588231430bd7f1bd3c1076a"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/ble/WriteCompletionState.java",
+      "sha256": "cc96eaeffdf8f99ccec574e2169f3857e5cfa09936c73f3c5bb7857664460bb9"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/LockCapabilities.java",
+      "sha256": "2ca4e1b366df6912d162a742b4a683744dea80ecb9b8d9e0c0a525a7491465d4"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/model/Account.java",
+      "sha256": "b17e655cde6524a23a4158b5b33ceb81dffb7bb02ce1437b27082dd0073d8084"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/model/DoorLock.java",
+      "sha256": "ec00a3aaddd8a869a4aff19e17ecbbc00e4202961aa312a37ab9dc9fe519174b"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/model/School.java",
+      "sha256": "7e97a92ec408d234fe1b4cf1256385a1fb9d504606357938753bd7bb28d7a9b2"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/README.md",
+      "sha256": "2804b65d799b65be7772432d5351179a46cb1a27d36565859616fac12fa3120e"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/SecureAccountStore.java",
+      "sha256": "e1004786183626cd59786cf7b540c4b757acda56e65006c1bbc77214ce60d8d5"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/data/YunmeiClient.java",
+      "sha256": "5d6250022440695bf111f6acdf47528524e40dbada3efc506f7583ef792a2746"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/LiteModel.java",
+      "sha256": "8158c654149b41ab4e8d46f40dfa4d714090871d3dfd528a72c972ce2b6361c4"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/MainActivity.java",
+      "sha256": "fb40469634adc1b5d20e04bfcca262f65b16b5c5ad6c25f2273f0daf901f0009"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/rewrite/PasswordFetchState.java",
+      "sha256": "e0218eb8353e1ef9b517ead353f6353cc8a69d7f83d9f783f809322ac6bc9cb6"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/vibe/data/ble/protocol/DoorResponseAssembler.java",
+      "sha256": "d029a553ff0eac0f4e9f09860eaaa2f66a63db76d55d3849ca992eb3f3d0feb0"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/vibe/data/ble/protocol/PlainFrameCodec.java",
+      "sha256": "15c3a1f9512d74ebc308857b3af5a0e55a3380851a8dc8c9f6f9db8d3198e2a9"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/vibe/data/ble/protocol/ResponseFrame.java",
+      "sha256": "6c33d345cb53e2b26a9e791c7c7f078a1ac09a0b925688d4cbdee57bd4f61359"
+    },
+    {
+      "path": "app/src/four/java/com/yunmei/vibe/data/ble/protocol/UnlockAttemptTracker.java",
+      "sha256": "11cf31d3415971163b5f46091cb98d39dca832c9f09ec25736d51d4d97a7b485"
+    },
+    {
+      "path": "app/src/four/kotlin/com/yunmei/rewrite/ui/LiteComposeHost.kt",
+      "sha256": "b41044100114b41a490e9fad3f08eb1f9c0d0650dd755f48ace471c9b65cc9ab"
+    },
+    {
+      "path": "app/src/four/res/drawable-nodpi/ic_official_bw.png",
+      "sha256": "c4f3d01966939080bf46666ac618c90c611c707b682c133186f363fc054cd368"
+    },
+    {
+      "path": "app/src/four/res/drawable-nodpi/support_payment.jpg",
+      "sha256": "bb5028dd0033307869866636392893007e171e5b5ffc320820f52253488d1723"
+    },
+    {
+      "path": "app/src/four/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "a7ad0564755ea3d7f323e1e9ed4eaa0c11b49b05cac6f780246881c73bea1dc9"
+    },
+    {
+      "path": "app/src/four/res/raw/miuix_license.txt",
+      "sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+    },
+    {
+      "path": "app/src/four/res/values/colors.xml",
+      "sha256": "01bf2d9065ed67bf8bc214e0385234dced006df612615b78e0319eebfd4a4f57"
+    },
+    {
+      "path": "app/src/four/res/values/strings.xml",
+      "sha256": "9cc12a61b1e326e628602ac0dcecc87a5d3ac87307e8d7bb7072ebf54d2ca333"
+    },
+    {
+      "path": "app/src/four/res/values/styles.xml",
+      "sha256": "bcf16716207586782a55d90d241334f2629609513c79ba18032874b01b77a6bb"
+    },
+    {
+      "path": "app/src/four/res/xml/data_extraction_rules.xml",
+      "sha256": "f2f358d89c06fa712f6887b9bac1d9859b8843ec79f614084d32029efb76db5c"
+    },
+    {
+      "path": "build.gradle.kts",
+      "sha256": "82b6a8acb6de8a0f2fd84cf74296a63845393dcd1ba1f74cdbdfa6c0d1334fbe"
+    },
+    {
+      "path": "docs/关键实现步骤.md",
+      "sha256": "a9cf450bfea0ce930cbcbeb31763a0db3b17f62ee1d0abcb49bf0af33af87800"
+    },
+    {
+      "path": "docs/图标处理说明.md",
+      "sha256": "f099c4181a6716d07c8260af41c7b81821be5c5d98d20d2d2ec3fdabfb730ade"
+    },
+    {
+      "path": "docs/验证记录.md",
+      "sha256": "e32c7c34b93fbc34ff94775ccbcd08f2390c5e81063711adaf12126e98f96dde"
+    },
+    {
+      "path": "gradle/gradle-daemon-jvm.properties",
+      "sha256": "71901cadba29a0573c6d9204ba3d7dd06ef95b2269c9d6ec5812211e9d19ad73"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "497c8c2a7e5031f6aa847f88104aa80a93532ec32ee17bdb8d1d2f67a194a9c7"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "3d91f0932da99885c41e9dc4e85c9f9a2d3bfef4f0ad87473014dc0827a94884"
+    },
+    {
+      "path": "gradle.properties",
+      "sha256": "3c58630f07e5a4c85e275d9119bdec774d945b8a072e63b6cb4bbb2c8b3749a7"
+    },
+    {
+      "path": "gradlew",
+      "sha256": "a5a5c199ba02189ae8c46a334223371a20599d9c298ef65e7540ede4a3f72d59"
+    },
+    {
+      "path": "gradlew.bat",
+      "sha256": "59328c7a17f673b1a63040bfb380a0c749e5d6df3406f7f18641060314cd9aa1"
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "protocol-tests/aes-fixtures.cjs",
+      "sha256": "0a2c87d542572681e782745cde7c89ce55b04bae6de61896491e71e8bd6cdf70"
+    },
+    {
+      "path": "protocol-tests/aes-fixtures.tsv",
+      "sha256": "7dd63874c8c1d9f2c2d31b8490b1841833a9fe75f41f4226a9eed1a1f253edd1"
+    },
+    {
+      "path": "protocol-tests/AesEnvelopeTest.java",
+      "sha256": "295de78374ea093560136aa33b328ed17477b89a5018917dd4200e46a1b6f921"
+    },
+    {
+      "path": "protocol-tests/AutoUnlockGateTest.java",
+      "sha256": "f43da327bebc0d982868e74027a2b78705a6f76b8d25038295a51ce2d65c51dd"
+    },
+    {
+      "path": "protocol-tests/BLE_CONTROLLER.md",
+      "sha256": "faa65a027e85207f90699044957a1ad2206d3473bb86b48cce1bb88f4461748b"
+    },
+    {
+      "path": "protocol-tests/LockCapabilitiesTest.java",
+      "sha256": "8d8606fff8141c438f90fd744c9783a3413161aaaed623794b347e09a57c8faf"
+    },
+    {
+      "path": "protocol-tests/PasswordFetchStateTest.java",
+      "sha256": "1eb9b6e487d669dfb4e69bb552cac786861e672ccc56cb0af1f2b1e19f2c075d"
+    },
+    {
+      "path": "protocol-tests/ProtocolCoreTest.java",
+      "sha256": "db35c80881857f5f5568f015f036d9c2255c8a801b5c476cde00cc95554e2bf8"
+    },
+    {
+      "path": "protocol-tests/README.md",
+      "sha256": "2810ebde45f05be5a9063f8e08d590630f332af75cd80ab1c73e9b92490e3f8e"
+    },
+    {
+      "path": "protocol-tests/run-aes.ps1",
+      "sha256": "804078ad2aefd7da642d7bdbcaa68607102c4653c5410674aeaed17af98fbebd"
+    },
+    {
+      "path": "protocol-tests/run-capabilities.ps1",
+      "sha256": "b7f69089d7a26a343a2800894153d14077a317312d92d98509037177b0eb5082"
+    },
+    {
+      "path": "protocol-tests/run-entry-and-write.ps1",
+      "sha256": "1ba8d97ac826fa83af76166c82b5eaa243e80aa8018623cd90f785e6c8532061"
+    },
+    {
+      "path": "protocol-tests/run-password-state.ps1",
+      "sha256": "a0139c42d59190fec770ed3244d907b4a0f23aef619ddea2d76c8c8520f7a0ce"
+    },
+    {
+      "path": "protocol-tests/run.ps1",
+      "sha256": "48d3c7fd0a15377851ba75ee0702c70183cb840dc30f16bd77a575dd5a06568e"
+    },
+    {
+      "path": "protocol-tests/WriteCompletionStateTest.java",
+      "sha256": "1d737133a243f418bea2c694a5559305553628ecb67052c7012fe880e97f89fd"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9d449380f30605244c7028dbb4497f32cfaa0e7e8573ede2ae2ca341afd6e3dd"
+    },
+    {
+      "path": "README.rewrite.md",
+      "sha256": "c203105bcf72a507a248d03298b076a2d0f29701fa147ceacd66c59722a12e32"
+    },
+    {
+      "path": "README.upstream.md",
+      "sha256": "e08391482a0d0703409986c2328cba91c64e062d235b458e7db6f0afa0169a80"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "sha256": "11922ead7feaf9bb79ddc834a6bb372635cfc12d00762b963551cbbcf31ce179"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "0253da0663d35568f6e7a481549500afd621e685acb8bc56ae7ad73a07161751"
+    }
+  ]
+}
